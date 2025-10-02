@@ -1,2 +1,3 @@
 # HTML-Y-CSS
-Ejercicio creativo de HTML y CSS
+Ejercicio creativo de CSS
+Sofia Lopez Holguin 
