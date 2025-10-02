@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Evil 6 - Personajes</title>
+  <link rel="stylesheet" href="creativo.css">
+</head>
+<body>
+  <header>
+    <h1>Resident Evil 6</h1>
+    <p>Información sobre los personajes y sus armas</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <img src="leon-kennedy-resident-evil-6-4364266.webp" alt="Leon S. Kennedy">
+      <h2>Leon S. Kennedy</h2>
+      <h3>Agente del Gobierno de EE.UU.</h3>
+      <p>Leon es uno de los protagonistas más icónicos de la saga. En RE6, enfrenta una nueva amenaza bioterrorista.</p>
+      <p><strong>Armas principales:</strong> Pistola Wing Shooter, escopeta y granadas.</p>
+    </section>
+
+    <section class="card">
+      <img src="akgc5iwybjr41.jpg" alt="Chris Redfield">
+      <h2>Chris Redfield</h2>
+      <h3>Capitán de la BSAA</h3>
+      <p>Veterano en la lucha contra el bioterrorismo, lidera a su equipo en misiones extremas.</p>
+      <p><strong>Armas principales:</strong> Rifle de asalto, escopeta y pistola.</p>
+    </section>
+
+    <section class="card">
+      <img src="Jake_Muller.webp" alt="Jake Muller">
+      <h2>Jake Muller</h2>
+      <h3>Mercenario</h3>
+      <p>Hijo de Albert Wesker. Su sangre es clave para combatir el nuevo virus.</p>
+      <p><strong>Armas principales:</strong> Pistola Nine-Oh-Nine, armas cuerpo a cuerpo.</p>
+    </section>
+
+    <section class="card">
+      <img src="resident-evil-4-separate-ways-3135534.webp" alt="Ada Wong">
+      <h2>Ada Wong</h2>
+      <h3>Agente misteriosa</h3>
+      <p>Ada se mueve en las sombras con objetivos propios, siempre rodeada de misterio.</p>
+      <p><strong>Armas principales:</strong> Ballesta, pistola y gancho especial.</p>
+    </section>
+  </main>
+
+  <button id="playBtn">Reproducir música</button>
+  <audio id="miAudio" src=""></audio>
+
+  <footer>
+    <p>© 2025 - Fanpage de Resident Evil 6</p>
+  </footer>
++
+  <script>
+    const audio = document.getElementById('miAudio');
+    const btn = document.getElementById('playBtn');
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = "Pausar música";
+      } else {
+        audio.pause();
+        btn.textContent = "Reproducir música";
+      }
+    });
+  </script>
+</body>
+</html>
